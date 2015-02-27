@@ -15,19 +15,9 @@
 	<nav>
 		{% include nav.html %}
 	</nav>
-	<section>
-		{% include home-carousel.html %}
-	</section>
 	<main class="container">
 		
-		<section id="events" class="row" data-0="opacity: 0.6;" data-center="opacity:1.0;">
-			<div class="col-sm-12">
-				<h1>Events</h1>
-				{% include events.html %}
-			</div>
-		</section>
-
-		<section id="about" class="row" data-0="opacity: 0.6;" data-center="opacity:1.0;">
+		<section class="row" data-0="opacity: 0.6;" data-top="opacity:1.0;">
 			<div class="col-sm-8">
 				<h1>About Trent</h1>
 				<img src="images/trent.jpg" alt="Trent Dransfield" class="profile-image">
@@ -35,6 +25,15 @@
 			</div>
 			<div class="col-sm-4">
 				{% include twitter-feed.html %}
+			</div>
+		</section>
+
+		<section class="row" data-0="opacity: 0.2;" data-center="opacity:1.0;">
+			<div class="col-sm-12">
+				<div class="the-music">
+					<h2>The Music</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+				</div>
 			</div>
 		</section>
 

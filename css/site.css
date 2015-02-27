@@ -1,7 +1,7 @@
 /* car */
 .home-carousel .carousel-inner {
 	width:100%;
-	max-height: 400px !important;
+	max-height: 388px !important;
 }
 
 .carousel-caption {
@@ -57,6 +57,10 @@ ul {
 	list-style: none;
 }
 
+* {
+	transition: all .05s ease;
+}
+
 .user {
 	display: none;
 }
@@ -84,3 +88,12 @@ ul {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #222;
 }
+
+td.location {
+	font-weight: 700;
+}
+
+td {
+	vertical-align: middle !important;
+}
+
