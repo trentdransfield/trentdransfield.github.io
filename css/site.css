@@ -10,15 +10,6 @@
 	bottom: 35px !important;
 }
 
-.carousel-caption.main {
-	left: 0% !important;
-	right: 65% !important;
-	bottom: 35px !important;
-	text-align: left !important;
-	padding-left: 15px;
-	background-color: rgba(34,34,34,.8) ;
-}
-
 .carousel-caption.main h1 {
 	font-size: 5vw;
 }
@@ -86,7 +77,7 @@ ul {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #222;
+	background-color: #222;
 }
 
 .navbar-right {
@@ -116,8 +107,50 @@ td p {
 }
 
 #event-container {
-	margin-top: -100px;
+	margin-top: -250px;
 	background-color: white;
 	min-height: 150px;
 	padding: 10px;
+}
+
+/*media*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+	.carousel-caption.main {
+		left: 0% !important;
+		right: 65% !important;
+		bottom: 25% !important;
+		text-align: left !important;
+		padding: 0px 0px 0px 15px;
+		background-color: rgba(34,34,34,.8);
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.carousel-caption.main {
+		left: 0% !important;
+		right: 65% !important;
+		bottom: 5% !important;
+		text-align: left !important;
+		padding: 0px 0px 0px 15px;
+		background-color: rgba(34,34,34,.8);
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.carousel-caption.main {
+		left: 0% !important;
+		right: 65% !important;
+		bottom: 5% !important;
+		width: 100%;
+		text-align: left !important;
+		padding: 0px 0px 0px 15px;
+		background-color: rgba(34,34,34,.8);
+	}
+
+	.carousel-indicators {
+		display:none !important;
+	}
 }
