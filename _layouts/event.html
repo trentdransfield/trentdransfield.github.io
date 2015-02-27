@@ -3,19 +3,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="/css/site.css">
-	<script src="/js/site.js"></script>
 	<title>Trent Dransfield</title>
+	{% include header.html %}
 </head>
 <body>
-	<header>
-		{% include header.html %}
-	</header>
 	<nav>
 		{% include nav.html %}
 	</nav>
+	<img id="hero-image" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">
 	<main class="container">
-	
+		<section class="row">
+			<div class="col-sm-12">
+				<div id="event-container">
+					<h1>{{ page.title }}</h1>
+					{{ page.content }}
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		{% include footer.html %}

@@ -1,17 +1,12 @@
 <table class="table">
+	{% for post in site.posts %}
+	{% if post.layout == 'event' %}  
 	<tr>
-		<td class="location">Location</td>
-		<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam</td>
-		<td style="font-size: 20px;"><a class="more" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></td>
+		<td class="location"><a href="{{ post.url }}">{{ post.location }}</a></td>
+		<td class="date" style="min-width: 100px;"><a href="{{ post.url }}">{{ post.date | date: "%-d %B" }}</a></td>
+		<td>{{ post.excerpt }}</td>
+		<td class="more"><a class="more" href="{{ post.url }}">more</a></td>
 	</tr>
-	<tr>
-		<td class="location">Location</td>
-		<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam</td>
-		<td style="font-size: 20px;"><a class="more" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></td>
-	</tr>
-	<tr>
-		<td class="location">Location</td>
-		<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam</td>
-		<td style="font-size: 20px;"><a class="more" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></td>
-	</tr>
+	{% endif %}
+	{% endfor %}
 </table>

@@ -89,7 +89,15 @@ ul {
     background-color: #222;
 }
 
-td.location {
+.navbar-right {
+	margin-right: 0px !important;
+}
+
+td a:not(.more) {
+	color: #222 !important;
+}
+
+td.location, td.date, td.more {
 	font-weight: 700;
 }
 
@@ -97,3 +105,19 @@ td {
 	vertical-align: middle !important;
 }
 
+td p {
+	margin: 0px;
+}
+
+/*events*/
+#hero-image {
+	width: 100%;
+	height: auto;
+}
+
+#event-container {
+	margin-top: -100px;
+	background-color: white;
+	min-height: 150px;
+	padding: 10px;
+}
