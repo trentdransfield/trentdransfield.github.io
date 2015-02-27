@@ -114,6 +114,35 @@ td p {
 }
 
 /*media*/
+main.media {
+	margin-top: 50px;
+}
+
+.media-item {
+	background-color: lightgrey;
+	min-height: 250px;
+	padding: 1px 10px 10px 10px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: opacity .25s;
+}
+
+.media-item:hover {
+	opacity: .8;
+}
+
+.media-item h3 {
+	font-size: 20px;
+}
+
+.media-item img {
+	width: 100%;
+}
+
+.modal-body {
+	padding: 5px !important;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1500px) {
 	.carousel-caption.main {
