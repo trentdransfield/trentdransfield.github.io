@@ -1,5 +1,6 @@
 <table class="table">
-	{% for post in site.posts %}
+	{% assign sortedcats = site.posts | sort %}
+	{% for post in sortedcats %}
 	{% if post.layout == 'event' %}  
 	<tr>
 		<td class="location"><a href="{{ post.url }}">{{ post.location }}</a></td>
